@@ -28,15 +28,12 @@ const ProfileSchema = new Schema({
     cars: [{
         model: {
             type: String,
-            required: true
         },
         horsepower: {
             type: String,
-            required: true
         },
         millage: {
             type: String,
-            required: true
         },
         //own date
         from: {
@@ -73,3 +70,5 @@ const ProfileSchema = new Schema({
         default: Date.now
     }
 })
+
+module.exports = Profile = mongoose.model('profile', ProfileSchema)
