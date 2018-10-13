@@ -28,17 +28,20 @@ const ProfileSchema = new Schema({
     cars: [{
         model: {
             type: String,
+            required: true
         },
         horsepower: {
             type: String,
+            required: true
         },
         millage: {
             type: String,
+
         },
         //own date
         from: {
             type: Date,
-            // required: true
+
         },
         to: {
             type: Date
